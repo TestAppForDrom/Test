@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/image_avatar"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_at"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/text_at"
+        style="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@id/image_avatar"
+        app:layout_constraintTop_toTopOf="@id/image_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/image_avatar"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_username"
+        android:singleLine="true"
+        style="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@id/text_at"
+        app:layout_constraintTop_toTopOf="@id/image_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/image_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@tools:sample/full_names"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint_repo_name"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_repo_name"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        style="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_avatar"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_repo_name"
+        style="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hint_repo_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:maxLines="2"
+        tools:text="@tools:sample/lorem/random"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint_repo_description"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_repo_description"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        style="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_repo_name"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_repo_description"
+        android:lineSpacingMultiplier="1.2"
+        style="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hint_repo_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:maxLines="5"
+        tools:text="@tools:sample/lorem/random"/>
+</android.support.constraint.ConstraintLayout>

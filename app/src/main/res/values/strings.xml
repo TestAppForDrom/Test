@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DromTest</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="button_login_anonymous">Go anonymous</string>
+    <string name="hint_search">Search</string>
+    <string name="text_repo_name">Repository name:</string>
+    <string name="text_repo_description">Repository description:</string>
+
+    <string name="menu_login">Login</string>
+    <string name="menu_logout">Exit</string>
+
+    <string name="error_api_rate_limit">API rate limit exceeded. Log in and try again.</string>
+    <string name="error_unknown">Something bad happened. Try again later.</string>
+
+    <string name="text_at">\@</string>
+    <string name="search_is_empty">Search is empty :(</string>
+</resources>
